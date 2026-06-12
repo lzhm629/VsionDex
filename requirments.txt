@@ -1,0 +1,20 @@
+# ===== vision =====
+opencv-python==4.13.0.92
+opencv-contrib-python==4.13.0.92
+mediapipe==0.10.35
+pillow
+
+# ===== robotics sim =====
+mujoco==3.9.0
+
+# ===== utils =====
+numpy
+scipy
+matplotlib
+tqdm
+pyzmq
+sounddevice
+fsspec
+python-dateutil
+pyparsing
+typing-extensions

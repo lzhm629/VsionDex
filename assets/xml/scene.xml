@@ -1,0 +1,60 @@
+<mujoco model="leap_hand_dual_puppeteering">
+    <compiler angle="radian" meshdir="../meshes/"/> 
+    <default>
+        <joint damping="1" frictionloss="0.01"/>
+        <geom friction="1 0.5 0.5"/>
+    </default> 
+    <option gravity="0 0 -9.81" timestep="0.002"/>
+
+
+    <asset>
+        <mesh name="base_link_simplified" content_type="model/obj" file="base_link_simplified.obj"/>
+        <mesh name="Thumb1_Link" content_type="model/stl" file="Thumb1_Link.STL"/>
+        <mesh name="Thumb2_Link" content_type="model/stl" file="Thumb2_Link.STL"/>
+        <mesh name="Thumb3_Link" content_type="model/stl" file="Thumb3_Link.STL"/>
+        <mesh name="Thumb4_Link" content_type="model/stl" file="Thumb4_Link.STL"/>
+        <mesh name="Index1_Link" content_type="model/stl" file="Index1_Link.STL"/>
+        <mesh name="Index2_Link" content_type="model/stl" file="Index2_Link.STL"/>
+        <mesh name="Index3_Link" content_type="model/stl" file="Index3_Link.STL"/>
+        <mesh name="Middle1_Link" content_type="model/stl" file="Middle1_Link.STL"/>
+        <mesh name="Middle2_Link" content_type="model/stl" file="Middle2_Link.STL"/>
+        <mesh name="Middle3_Link" content_type="model/stl" file="Middle3_Link.STL"/>
+        <mesh name="Ring1_Link" content_type="model/stl" file="Ring1_Link.STL"/>
+        <mesh name="Ring2_Link" content_type="model/stl" file="Ring2_Link.STL"/>
+        <mesh name="Ring3_Link" content_type="model/stl" file="Ring3_Link.STL"/>
+        <mesh name="Pinky1_Link" content_type="model/stl" file="Pinky1_Link.STL"/>
+        <mesh name="Pinky2_Link" content_type="model/stl" file="Pinky2_Link.STL"/>
+        <mesh name="Pinky3_Link" content_type="model/stl" file="Pinky3_Link.STL"/>
+    </asset>
+
+
+    <worldbody>
+        <body name="base" pos="0 0.3 0">
+            <include file="hand_real.xml"/>
+        </body> 
+    </worldbody>
+
+
+    <actuator>
+        <position name="act_J_thumb1" joint="J_thumb1" kp="20" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_thumb2" joint="J_thumb2" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_thumb3" joint="J_thumb3" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_thumb4" joint="J_thumb4" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+
+        <position name="act_J_index1" joint="J_index1" kp="20" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_index2" joint="J_index2" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_index3" joint="J_index3" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+
+        <position name="act_J_middle1" joint="J_middle1" kp="20" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_middle2"  joint="J_middle2"  kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_middle3" joint="J_middle3" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+
+        <position name="act_J_ring1" joint="J_ring1" kp="20" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_ring2" joint="J_ring2" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_ring3" joint="J_ring3" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+
+        <position name="act_J_pinky1" joint="J_pinky1" kp="20" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_pinky2" joint="J_pinky2" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+        <position name="act_J_pinky3" joint="J_pinky3" kp="2" kv="0.1" ctrlrange="-3.14 3.14"/>
+    </actuator> 
+</mujoco>

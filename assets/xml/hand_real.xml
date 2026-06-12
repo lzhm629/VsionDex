@@ -1,0 +1,86 @@
+<mujoco>
+
+  <geom type="mesh" rgba="1 1 1 1" mesh="base_link_simplified" contype="0" conaffinity="0"/>
+  
+  <body name="Thumb1_Link" pos="-0.1227 0.0175 -0.1029" quat="0.707107 0 0 0.707107">
+    <inertial pos="0.0063477 -0.000945376 0.0244983" quat="0.000534756 0.701835 -0.000518749 0.712339" mass="0.0118765" diaginertia="1.56227e-06 1.36956e-06 7.3946e-07"/>
+    <joint name="J_thumb1" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+    <geom type="mesh" rgba="1 0.501961 0.501961 1" mesh="Thumb1_Link"/>
+    <body name="Thumb2_Link" pos="-0.0005 0 0.0297" quat="0.707105 -0.707108 0 0">
+      <inertial pos="0 0 0.021545" quat="0.5 0.5 0.5 0.5" mass="0.00484954" diaginertia="1.03253e-06 9.2868e-07 4.16545e-07"/>
+      <joint name="J_thumb2" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+      <geom type="mesh" rgba="1 0.501961 0.501961 1" mesh="Thumb2_Link"/>
+      <body name="Thumb3_Link" pos="0 0 0.0355" quat="0.707107 0 -0.707107 0">
+        <inertial pos="0.0202176 -3.20081e-06 0.000783403" quat="0.706611 0.00187659 0.00190458 0.707598" mass="0.0143321" diaginertia="1.90059e-06 1.54257e-06 1.36708e-06"/>
+        <joint name="J_thumb3" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Thumb3_Link"/>
+        <body name="Thumb4_Link" pos="0.0507 0 0">
+          <inertial pos="0.0324571 0.000463037 0.0004452" quat="0.492542 0.491954 0.507312 0.507955" mass="0.0252146" diaginertia="2.99971e-06 2.65494e-06 1.96564e-06"/>
+          <joint name="J_thumb4" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="Thumb4_Link"/>
+        </body>
+      </body>
+    </body>
+  </body>
+  <body name="Index1_Link" pos="-0.14 0.0201 -0.1897" quat="0.500598 0.499401 0.4994 -0.5006">
+    <inertial pos="0.0210002 0 4.99999e-05" quat="0.999999 0 0.00119047 0" mass="0.00969909" diaginertia="1.85736e-06 1.44907e-06 1.44907e-06"/>
+    <joint name="J_index1" pos="0 0 0" axis="-0.00238089 0 -0.999997" range="-3.14 3.14"/>
+    <geom type="mesh" rgba="1 0.501961 0.501961 1" mesh="Index1_Link"/>
+    <body name="Index2_Link" pos="0.0420001 0 0" quat="0.707106 0.707106 0.000841792 -0.000841792">
+      <inertial pos="0.0202176 -3.20081e-06 0.000783403" quat="0.706611 0.00187659 0.00190458 0.707598" mass="0.0143321" diaginertia="1.90059e-06 1.54257e-06 1.36708e-06"/>
+      <joint name="J_index2" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="Index2_Link"/>
+      <body name="Index3_Link" pos="0.0507 0 0">
+        <inertial pos="0.0324571 -0.000466675 0.000445378" quat="0.507806 0.506986 0.492158 0.492827" mass="0.0252146" diaginertia="2.99965e-06 2.65494e-06 1.9657e-06"/>
+        <joint name="J_index3" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Index3_Link"/>
+      </body>
+    </body>
+  </body>
+  <body name="Middle1_Link" pos="-0.1 0.0201 -0.1897" quat="0.500598 0.499401 0.4994 -0.5006">
+    <inertial pos="0.0210002 0 4.99999e-05" quat="0.999999 0 0.00119047 0" mass="0.00969909" diaginertia="1.85736e-06 1.44907e-06 1.44907e-06"/>
+    <joint name="J_middle1" pos="0 0 0" axis="-0.00238089 0 -0.999997" range="-3.14 3.14"/>
+    <geom type="mesh" rgba="1 0.501961 0.501961 1" mesh="Middle1_Link"/>
+    <body name="Middle2_Link" pos="0.0420001 0 0" quat="0.707106 0.707106 0.000841792 -0.000841792">
+      <inertial pos="0.0202176 -3.20081e-06 0.000783403" quat="0.706611 0.00187659 0.00190458 0.707598" mass="0.0143321" diaginertia="1.90059e-06 1.54257e-06 1.36708e-06"/>
+      <joint name="J_middle2" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="Middle2_Link"/>
+      <body name="Middle3_Link" pos="0.0507 0 0">
+        <inertial pos="0.0324571 -0.000466676 0.000445379" quat="0.507806 0.506986 0.492158 0.492827" mass="0.0252146" diaginertia="2.99965e-06 2.65494e-06 1.9657e-06"/>
+        <joint name="J_middle3" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Middle3_Link"/>
+      </body>
+    </body>
+  </body>
+  <body name="Ring1_Link" pos="-0.06 0.0201 -0.1897" quat="0.500598 0.499401 0.4994 -0.5006">
+    <inertial pos="0.0210002 0 4.99999e-05" quat="0.999999 0 0.00119047 0" mass="0.00969909" diaginertia="1.85736e-06 1.44907e-06 1.44907e-06"/>
+    <joint name="J_ring1" pos="0 0 0" axis="-0.00238089 0 -0.999997" range="-3.14 3.14"/>
+    <geom type="mesh" rgba="1 0.501961 0.501961 1" mesh="Ring1_Link"/>
+    <body name="Ring2_Link" pos="0.0420001 0 0" quat="0.707106 0.707106 0.000841792 -0.000841792">
+      <inertial pos="0.0202176 -3.20047e-06 0.000783402" quat="0.706611 0.00187662 0.00190462 0.707598" mass="0.0143321" diaginertia="1.90059e-06 1.54257e-06 1.36708e-06"/>
+      <joint name="J_ring2" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="Ring2_Link"/>
+      <body name="Ring3_Link" pos="0.0507 0 0">
+        <inertial pos="0.0324571 -0.000466675 0.000445378" quat="0.507806 0.506986 0.492158 0.492827" mass="0.0252146" diaginertia="2.99965e-06 2.65494e-06 1.9657e-06"/>
+        <joint name="J_ring3" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Ring3_Link"/>
+      </body>
+    </body>
+  </body>
+  <body name="Pinky1_Link" pos="-0.02 0.0201 -0.1897" quat="0.500595 0.499404 0.499404 -0.500595">
+    <inertial pos="0.0210002 0 4.99999e-05" quat="0.999999 0 0.00119047 0" mass="0.00969909" diaginertia="1.85736e-06 1.44907e-06 1.44907e-06"/>
+    <joint name="J_pinky1" pos="0 0 0" axis="-0.00238095 0 -0.999997" range="-3.14 3.14"/>
+    <geom type="mesh" rgba="1 0.501961 0.501961 1" mesh="Pinky1_Link"/>
+    <body name="Pinky2_Link" pos="0.0420001 0 0" quat="0.707106 0.707106 0.000841792 -0.000841792">
+      <inertial pos="0.0202176 -3.20081e-06 0.000783403" quat="0.706611 0.00187659 0.00190458 0.707598" mass="0.0143321" diaginertia="1.90059e-06 1.54257e-06 1.36708e-06"/>
+      <joint name="J_pinky2" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+      <geom type="mesh" rgba="1 1 1 1" mesh="Pinky2_Link"/>
+      <body name="Pinky3_Link" pos="0.0507 0 0">
+        <inertial pos="0.0324571 -0.000466676 0.000445379" quat="0.507806 0.506986 0.492158 0.492827" mass="0.0252146" diaginertia="2.99965e-06 2.65494e-06 1.9657e-06"/>
+        <joint name="J_pinky3" pos="0 0 0" axis="0 0 -1" range="-3.14 3.14"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="Pinky3_Link"/>
+      </body>
+    </body>
+  </body>
+
+</mujoco>

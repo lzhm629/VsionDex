@@ -1,0 +1,46 @@
+name: visiondex
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # =====================
+  # Python
+  # =====================
+  - python=3.10
+  - pip
+
+  # =====================
+  # scientific computing
+  # =====================
+  - numpy
+  - scipy
+  - matplotlib
+  - tqdm
+
+  # =====================
+  # system / rendering
+  # =====================
+  - glfw
+  - pyopengl
+
+  # =====================
+  # pip packages
+  # =====================
+  - pip:
+      # ===== robotics simulation =====
+      - mujoco==3.9.0
+
+      # ===== vision =====
+      - opencv-python==4.13.0.92
+      - opencv-contrib-python==4.13.0.92
+      - mediapipe==0.10.35
+      - pillow
+
+      # ===== utilities =====
+      - pyzmq
+      - sounddevice
+      - fsspec
+      - python-dateutil
+      - pyparsing
+      - typing-extensions
